@@ -119,7 +119,7 @@ class QuestionPaint {
                 finishTitle.id = "hits";
                 btContinue.innerText = "Volver a jugar";
                 btContinue.id = "btnContinue";
-                btContinue.addEventListener("click", () => location.reload());
+                btContinue.addEventListener("click", () => this.removeQuizz());
                 divAnswers.appendChild(btContinue);
                 divAnswers.appendChild(finishTitle);
             } else {
@@ -132,9 +132,15 @@ class QuestionPaint {
     }
     removeQuestions(divQuestions) {
         divQuestions.remove();
-        //  Vuelvo a validar el EventListener de los botones
+        //  Vuelvo a activar el EventListener de los botones
         this.responseChecked = false;
         this.questionLauncher();
+    }
+
+    removeQuizz() {
+        gameCanvas.remove();
+        this.questions = undefined;
+        newGameWelcome = new GameWelcome();
     }
 
 }
@@ -183,4 +189,4 @@ class GameWelcome {
     }
 }
 
-const newGameWelcome = new GameWelcome();
+let newGameWelcome = new GameWelcome();
