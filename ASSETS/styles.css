@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+body {
+    margin: 0px;
+}
+
+#gameCanvas {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeArea,
+.gameArea {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+#questions {
+    width: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1);
+}
+
+#question {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+}
+
+#btnStart,
+#btnContinue {
+    width: 500px;
+    border: solid 2px black;
+    color: black;
+    background-color: white;
+    padding: 20px 30px 20px 30px;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+:focus {
+    outline: none;
+}
+
+.xplanation {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+}
+
+#hits {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0px 0px 0px;
+}
+
+.btnResponse {
+    width: 500px;
+    border: solid 2px black;
+    color: black;
+    background-color: white;
+    padding: 20px 30px 20px 30px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.ok {
+    border: solid 2px rgb(0, 164, 33);
+    color: rgb(0, 164, 33);
+}
+
+.error {
+    border: solid 2px rgb(255, 0, 89);
+    color: rgb(255, 0, 89);
+}
